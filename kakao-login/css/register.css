@@ -2,36 +2,101 @@ body {
   text-align: left;
 }
 input {
-  width: calc(100% - 104px);
-  height: 24px;
+  width: 100%;
+  height: 36px;
   font-size: 16px;
   border: none;
-  border-bottom: grey 1px solid;
+  border: #C4C4C4 1px solid;
+  margin-top: 5px;
 }
 input:focus {
   outline: none;
 }
 #container {
-  background: linear-gradient(90deg, #8c0000 50%, #ccc2a3 50%);
-  width: 320px;
-  height: 450px;
-  margin: auto;
-  padding: 10px 0px;
+  margin: auto 40px;
 }
+.guidance{
+  margin: 80px 0px;
+  text-align: left;
+  font-size:26px;
+}
+
+.logo{
+  font-weight: bold;
+  color:#8c0000;
+}
+
+.title{
+  font-weight: bold;
+  color:#111111;
+}
+
+.simple_guide{
+  font-size:14px;
+  color:#363636;
+}
+
 #details {
   background-color: white;
-  width: 320px;
-  height: 450px;
+  margin: 0px;
 }
 #details div {
   margin: 20px 0px;
 }
 #details label {
   display: inline-block;
-  width: 96px;
-  text-align: right;
-  font-size: 14px;
+  width: 120px;
+  text-align: left;
+  font-size: 16px;
 }
+
 #button-container {
-  text-align: right;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 60px;
+
+  line-height: 60px;
+  text-align: center;
+  border-top: 1px solid #C4C4C4;
+
+  display: flex;
+}
+
+#cancel{
+  position: absolute;
+  bottom: 0px;
+  height: 60px;
+  width: 50%;
+  background-color: white;
+  border: 0px solid #363636;
+  color: #8c0000;
+  font-size: 16px;
+}
+
+#submit{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 60px;
+  width: 50%;
+  background-color: #8c0000;
+  border: 0px solid #8c0000;
+  color: white;
+  font-size: 16px;
+}
+
+@media (max-width: 350px)
+{
+  #container{
+      margin: auto 20px;
+   }
+}
+
+@media (min-width: 1060px)
+{
+  #details div {
+    margin: 10px 0px;
+  }
 }

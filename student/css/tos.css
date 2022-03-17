@@ -8,16 +8,15 @@ a{
 .guidance{
     margin: 80px 40px;
     text-align: left;
+    font-size:26px;
 }
 
 .logo{
-    font-size:26px;
     font-weight: bold;
     color:#8c0000;
 }
 
-.tos_title{
-    font-size:26px;
+.title{
     font-weight: bold;
     color:#111111;
 }
